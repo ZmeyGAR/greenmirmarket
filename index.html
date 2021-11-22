@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+        <title> Магазин "Зеленый мир" </title>
+    
+    
+    
+    <meta name="author" content="Лагутин Виталий">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- STYLESHEET -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+
+    <link rel="stylesheet" href="./styles/swiper.bundle.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/swiper-bundle.js" defer></script>
+    <script src="./scripts/main.min.js" defer></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header--sticky">
+    <div class="header__container __container">
+        <div class="header__logo logo">
+            <a href="#" class="logo__link" title="Главная страница">
+                <picture><source srcset="icons/logo.svg" type="image/webp"><img src="icons/logo.svg" alt="Логотип магазина" class="logo__img"></picture>
+            </a>
+        </div>
+        <nav class="header__nav nav" data-da=".header__burger, 569.98, 2">
+            <ul class="nav__list">
+                <li class="nav__item current">
+                    <a href="#" class="nav__link ">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Каталог</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Доставка</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">О нас</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Советы</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__widgets widgets">
+            <ul class="widgets__list">
+                <li class="widgets__item widgets__item--auto-width">
+                    <form class="search">
+                        <input class="search__input" type="search">
+                        <span class="search__placeholder" data-placeholder="Поиск">Поиск</span>
+                        <button class="search__btn" type="submit">
+                            <span class="search__icon"></span>
+                        </button>
+                    </form>
+                </li>
+                <li class="widgets__item">
+                    <div class="cart cart--mini" data-count="10">
+                        <button class="cart__btn">
+                            <span class="cart__icon"></span>
+                        </button>
+                        <ul class="cart__list">
+                            <li class="cart__item"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="widgets__item">
+                    <div class="lk">
+                        <button class="lk__btn lk__sign-up">Войти</button>
+                    </div>
+                </li>
+                <li class="widgets__item">
+                    <div class="header__burger" onclick="this.classList.toggle('open')">
+                        <button class="burger">
+                            <span class="burger__icon"></span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="header__mobile modile-nav">
+        <ul class="modile-nav__list">
+            <li class="modile-nav__item">
+                <button class="modile-nav__btn btn-main">
+                    <span class="modile-nav__icon btn-main__icon"></span>
+                    Главная
+                </button>
+            </li>
+            <li class="modile-nav__item">
+                <button class="modile-nav__btn btn-catalog">
+                    <span class="modile-nav__icon btn-catalog__icon"></span>
+                    Каталог
+                </button>
+            </li>
+            <li class="modile-nav__item">
+                <button class="modile-nav__btn btn-cart">
+                    <span class="modile-nav__icon btn-cart__icon"></span>
+                    Корзина
+                </button>
+            </li>
+            <li class="modile-nav__item">
+                <button class="modile-nav__btn btn-favorites">
+                    <span class="modile-nav__icon btn-favorites__icon"></span>
+                    Избранное
+                </button>
+            </li>
+            <li class="modile-nav__item">
+                <button class="modile-nav__btn btn-lk">
+                    <span class="modile-nav__icon btn-lk__icon"></span>
+                    Войти
+                </button>
+            </li>
+        </ul>
+    </div>
+</header>
+        <main>
+            <section class="section hero">
+    <div class="hero__container __container">
+        <div class="hero__logo">
+            <picture><source srcset="../icons/big_logo.svg" type="image/webp"><img src="../icons/big_logo.svg" alt=""></picture>
+        </div>
+        <div class="hero__banner">
+            <!-- Slider main container -->
+            <div class="swiper banner">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide banner__slide">
+                        <figure>
+                            <figcaption class="banner__badge">
+
+                                <span class="banner__name">Акция</span>
+                                <span class="banner__discount">-30%</span>
+
+                            </figcaption>
+                            <picture><source srcset="image/cv-rassada.webp" type="image/webp"><img class="banner__img" src="image/cv-rassada.jpg" alt=""></picture>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide banner__slide">
+                        <figure>
+                            <figcaption class="banner__badge">
+
+                                <span class="banner__name">Акция</span>
+                                <span class="banner__discount">-30%</span>
+
+                            </figcaption>
+                            <picture><source srcset="image/garden-fertilizer.webp" type="image/webp"><img class="banner__img" src="image/garden-fertilizer.jpg" alt=""></picture>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide banner__slide">
+                        <figure>
+                            <figcaption class="banner__badge">
+
+                                <span class="banner__name">Акция</span>
+                                <span class="banner__discount">-30%</span>
+
+                            </figcaption>
+                            <picture><source srcset="image/sistema-kapelnogo-poliva.webp" type="image/webp"><img class="banner__img" src="image/sistema-kapelnogo-poliva.jpg" alt=""></picture>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section__separator hero__separator"></div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="footer__separator"></div>
+    <div class="footer__content">
+        <div class="footer__container __container">
+            <p class="copyright">Все права не защищены</p>
+        </div>
+    </div>
+
+</footer>
+    </div>
+
+</body>
+
+</html>
