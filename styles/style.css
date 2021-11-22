@@ -534,8 +534,8 @@ main {
     height: 100%;
     border-bottom-right-radius: 100%;
     background: #EBF2DC url(../icons/logo_banner.svg) no-repeat;
-    -webkit-animation: background-move 60s infinite;
-            animation: background-move 60s infinite;
+    -webkit-animation: background-logo 60s infinite;
+            animation: background-logo 60s infinite;
     z-index: 2; }
   .hero__container {
     display: -webkit-box;
@@ -591,6 +591,22 @@ main {
     background-position: right; }
   100% {
     background-position: top; } }
+
+@-webkit-keyframes background-logo {
+  0% {
+    background-position: -50% 0; }
+  50% {
+    background-position: 50% 0; }
+  100% {
+    background-position: -50% 0; } }
+
+@keyframes background-logo {
+  0% {
+    background-position: -50% 0; }
+  50% {
+    background-position: 50% 0; }
+  100% {
+    background-position: -50% 0; } }
 
 .banner {
   max-width: 100%;
