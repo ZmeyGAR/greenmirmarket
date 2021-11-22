@@ -533,7 +533,9 @@ main {
     width: 80%;
     height: 100%;
     border-bottom-right-radius: 100%;
-    background: #EBF2DC;
+    background: #EBF2DC url(../icons/logo_banner.svg) no-repeat;
+    -webkit-animation: background-move 60s infinite;
+            animation: background-move 60s infinite;
     z-index: 2; }
   .hero__container {
     display: -webkit-box;
@@ -752,6 +754,7 @@ main {
 .modile-nav .btn-favorites__icon{background:url(../icons/favorites.svg) 0 0/contain no-repeat}
 .modile-nav .btn-lk__icon{background:url(../icons/user.svg) 0 0/contain no-repeat}
 .hero:after{background:#447A2A url(../icons/pattern.svg) repeat fixed}
+.hero::before{background:#EBF2DC url(../icons/logo_banner.svg) no-repeat}
 .banner__slide figure{background:#EBF2DC url(../icons/CIRCLE.svg) 0/contain no-repeat}
 .banner__badge{background:#EBF2DC url(../icons/CIRCLE.svg) 0/contain no-repeat}
 .footer{background:url(../icons/footer-line.svg) top/contain no-repeat}
