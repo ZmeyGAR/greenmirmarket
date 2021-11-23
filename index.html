@@ -61,6 +61,10 @@
             height: 50%;
         }
 
+        .preload-page .preloader svg {
+            filter: drop-shadow(5px 5px 2px #ccc);
+        }
+
         .preload-page .preloader .leaf {
             opacity: 0;
         }
@@ -481,7 +485,11 @@
 
                             </figcaption>
                             <a href="#" class="banner__link">
-                                <picture><source srcset="image/cv-rassada.webp" type="image/webp"><img class="banner__img" src="image/cv-rassada.jpg" alt=""></picture>
+                                <picture>
+                                    <source data-srcset="image/cv-rassada.webp" type="image/webp" class="swiper-lazy">
+                                    <img class="banner__img swiper-lazy" alt="" data-src="image/cv-rassada.jpg">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
                             </a>
                         </figure>
                     </div>
@@ -494,7 +502,12 @@
 
                             </figcaption>
                             <a href="#" class="banner__link">
-                                <picture><source srcset="image/garden-fertilizer.webp" type="image/webp"><img class="banner__img" src="image/garden-fertilizer.jpg" alt=""></picture>
+                                <picture>
+                                    <source data-srcset="image/garden-fertilizer.webp" type="image/webp"
+                                        class="swiper-lazy">
+                                    <img class="banner__img swiper-lazy" alt="" data-src="image/garden-fertilizer.jpg">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
                             </a>
                         </figure>
                     </div>
@@ -507,7 +520,13 @@
 
                             </figcaption>
                             <a href="#" class="banner__link">
-                                <picture><source srcset="image/sistema-kapelnogo-poliva.webp" type="image/webp"><img class="banner__img" src="image/sistema-kapelnogo-poliva.jpg" alt=""></picture>
+                                <picture>
+                                    <source data-srcset="image/sistema-kapelnogo-poliva.webp" type="image/webp"
+                                        class="swiper-lazy">
+                                    <img class="banner__img swiper-lazy" alt=""
+                                        data-src="image/sistema-kapelnogo-poliva.jpg">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
                             </a>
                         </figure>
                     </div>
@@ -517,7 +536,7 @@
         </div>
 
     </div>
-    <div class="section__separator hero__separator"></div>
+    <div class="section__separator section__separator--down hero__separator"></div>
 </section>
 
             <section class="section">
@@ -611,7 +630,176 @@
             </div>
         </div>
     </div>
-    <div class="section__separator"></div>
+</section>
+
+            <section class="section section--bg">
+    <div class="section__separator section__separator--up"></div>
+
+    <div class="section__container __container">
+        <h2 class="section__title">акции</h2>
+        <div class="section__content">
+
+            <div class="swiper recomended-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide product">
+                        <div class="product product--mini-card" data-tilt>
+                            <div class="product__badge">Хит</div>
+                            <a href="#" class="product__img">
+                                <picture>
+                                    <source data-srcset="image/tomat.webp" type="image/webp" class="swiper-lazy">
+                                    <img alt="Томат безрассадный" class="swiper-lazy swiper-lazy-loaded"
+                                        data-src="image/tomat.jpg">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
+                            </a>
+                            <a href="#" class="product__name">Томат безрассадный</a>
+                            <div class="product__action action">
+                                <button class="action__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide product">
+                        <div class="product product--mini-card" data-tilt>
+                            <div class="product__badge">-20%</div>
+                            <a href="#" class="product__img">
+                                <picture>
+                                    <source data-srcset="image/product_2.webp" type="image/webp" class="swiper-lazy">
+                                    <img alt="Какой то новый продукт" class="swiper-lazy swiper-lazy-loaded"
+                                        data-src="image/product_2.jpg">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
+                            </a>
+                            <a href="#" class="product__name">Какой то новый продукт</a>
+                            <div class="product__action action">
+                                <button class="action__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide product">
+                        <div class="product product--mini-card" data-tilt>
+                            <div class="product__badge">1+1=3</div>
+                            <a href="#" class="product__img">
+                                <picture>
+                                    <source data-srcset="image/product_3.webp" type="image/webp" class="swiper-lazy">
+                                    <img alt="Еще одна новинка в нашем интернет магазине"
+                                        class="swiper-lazy swiper-lazy-loaded" data-src="image/product_3.jpg">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
+                            </a>
+                            <a href="#" class="product__name">Еще одна новинка в нашем интернет магазине</a>
+                            <div class="product__action action">
+                                <button class="action__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="recomended-slider__navigation">
+                    <button class="button-prev" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                        data-tilt-scale="1.2">
+                    </button>
+                    <button class="button-next" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                        data-tilt-scale="1.2">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section__separator section__separator--down"></div>
+</section>
+
+            <section class="section">
+    <div class="section__container __container">
+        <h2 class="section__title">Советы</h2>
+        <div class="section__content article">
+
+            <div class="swiper article-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide article">
+                        <div class="article--mini-card" data-tilt>
+                            <div class="article__img">
+                                <picture>
+                                    <source class="swiper-lazy" data-srcset="image/blog/article_1.webp"
+                                        type="image/webp">
+                                    <img class="swiper-lazy" data-src="image/blog/article_1.jpg" alt="Статья">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="article__name">Антрактоз какой то</div>
+                            <p class="article__description">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут, рыбные тексты. Всеми, составитель однажды грустный вскоре ты пустился
+                                жаренные. Текста буквоград вопрос языкового несколько своих текстов ты океана пор собрал
+                                коварный.</p>
+                            <div class="article__action action">
+                                <button class="action__btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide article">
+                        <div class="article--mini-card" data-tilt>
+                            <div class="article__img">
+                                <picture>
+                                    <source class="swiper-lazy" data-srcset="image/blog/article_1.webp"
+                                        type="image/webp">
+                                    <img class="swiper-lazy" data-src="image/blog/article_1.jpg" alt="Статья">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="article__name">Антрактоз какой то</div>
+                            <p class="article__description">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут, рыбные тексты. Всеми, составитель однажды грустный вскоре ты пустился
+                                жаренные. Текста буквоград вопрос языкового несколько своих текстов ты океана пор собрал
+                                коварный.</p>
+                            <div class="article__action action">
+                                <button class="action__btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide article">
+                        <div class="article--mini-card" data-tilt>
+                            <div class="article__img">
+                                <picture>
+                                    <source class="swiper-lazy" data-srcset="image/blog/article_1.webp"
+                                        type="image/webp">
+                                    <img class="swiper-lazy" data-src="image/blog/article_1.jpg" alt="Статья">
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="article__name">Антрактоз какой то</div>
+                            <p class="article__description">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут, рыбные тексты. Всеми, составитель однажды грустный вскоре ты пустился
+                                жаренные. Текста буквоград вопрос языкового несколько своих текстов ты океана пор собрал
+                                коварный.</p>
+                            <div class="article__action action">
+                                <button class="action__btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="article-slider__navigation">
+                <button class="button-prev" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.2">
+                </button>
+                <button class="button-next" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.2">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="section__separator section__separator--down"></div>
 </section>
         </main>
 
