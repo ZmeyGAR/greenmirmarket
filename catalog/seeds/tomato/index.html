@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-        <title> Магазин "Зеленый мир" : Категории товаров </title>
+        <title> Магазин "Зеленый мир" </title>
     
     
     
@@ -474,12 +474,12 @@
     <div class="wrapper">
 
         <main>
+            <section class="section section--white">
+                <div class="section__separator section__separator--up"></div>
 
-            <section class="section category-header">
-    <div class="section__container __container category-header__container">
-        <div class="category-header__content">
-
-            <div class="category-list">
+                <div class="section__container __container product-page">
+                    <div class="product-page__left-column">
+                        <div class="category-list">
     <span class="category-list__title">Каталог</span>
     <ul class="category-list__list">
         <li class="category-list__item" data-tilt data-tilt-axis="y">
@@ -515,198 +515,172 @@
 
     </ul>
 </div>
+                    </div>
+                    <div class="product-page__content product">
+                        <div class="product__galery">
+                            <!-- Slider main container -->
+                            <div class="swiper product__galery--main-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product__image">
+                                            <picture>
+                                                <source data-srcset="../image/soya.webp" type="image/webp"
+                                                    class="swiper-lazy">
+                                                <img src="../image/soya.jpg" alt="Томат" class="swiper-lazy">
+                                            </picture>
+                                        </div>
 
-            <!-- Slider main container -->
-<div class="swiper best-seller-product-slider">
-    <span class="best-seller-product-slider__title">Товары недели</span>
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <div class="swiper-slide product">
-                <div class="product product--mini-card" data-tilt>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__image">
+                                            <picture>
+                                                <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                    class="swiper-lazy">
+                                                <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                            </picture>
+                                        </div>
 
-                    <a href="catalog/seeds/tomato" class="product__img">
-                        <picture>
-                            <source data-srcset="image/tomat.webp" type="image/webp" class="swiper-lazy">
-                            <img alt="Томат безрассадный" class="swiper-lazy swiper-lazy-loaded"
-                                data-src="image/tomat.jpg">
-                        </picture>
-                        <div class="swiper-lazy-preloader"></div>
-                    </a>
-                    <a href="catalog/seeds/tomato" class="product__name">Томат безрассадныйТомат безрассадныйТомат
-                        безрассадныйТомат
-                        безрассадныйТомат безрассадныйТомат безрассадныйТомат безрассадныйТомат безрассадныйТомат
-                        безрассадныйТомат безрассадный</a>
-                    <div class="product__action action">
-                        <button class="action__btn">Заказать</button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product__image">
+                                            <picture>
+                                                <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                    class="swiper-lazy">
+                                                <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slider thumb container -->
+                            <div class="product__galery--thumb-slider">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="product__image">
+                                                <picture>
+                                                    <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                        class="swiper-lazy">
+                                                    <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product__image">
+                                                <picture>
+                                                    <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                        class="swiper-lazy">
+                                                    <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="product__image">
+                                                <picture>
+                                                    <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                        class="swiper-lazy">
+                                                    <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper__navigation">
+                                    <button class="button-next"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__tools">
+                            <h1 class="section__title product__title">Томат Компанеро F1</h1>
+                            <div class="__row">
+                                <div class="product__rating product__rating--no-touch">
+                                    <fieldset>
+                                        <input type="radio" id="star87_5" name="rating_87" value="5">
+                                        <label for="star87_5" title="Превосходно">5 stars</label>
+                                        <input type="radio" id="star87_4" name="rating_87" value="4">
+                                        <label for="star87_4" title="Отлично">4 stars</label>
+                                        <input type="radio" id="star87_3" name="rating_87" value="3">
+                                        <label for="star87_3" title="Хорошо">3 stars</label>
+                                        <input type="radio" id="star87_2" name="rating_87" value="2">
+                                        <label for="star87_2" title="Неплохо">2 stars</label>
+                                        <input type="radio" id="star87_1" name="rating_87" value="1">
+                                        <label for="star87_1" title="Плохо">1 stars</label>
+                                    </fieldset>
+                                </div>
+                                <span class="product__model">артикул: ОЧ-00008636</span>
+                            </div>
+                            <span class="product__price">
+                                155550.00p
+                            </span>
+                            <ul class="product__options">
+                                <li class="option">
+                                    <span class="option__name">фасовка семян</span>
+                                    <ul class="option__list">
+                                        <li class="radio">
+                                            <input type="radio" id="input-1" name="option-1">
+                                            <label for="input-1"><b>1000 шт</b>1555 p.</label>
+                                        </li>
+                                        <li class="radio">
+                                            <input type="radio" id="input-2" name="option-1">
+                                            <label for="input-2"><b>2000 шт</b>3000 p.</label>
+                                        </li>
+                                        <li class="radio">
+                                            <input type="radio" id="input-3" name="option-1">
+                                            <label for="input-3"><b>3000 шт</b>4700 p.</label>
+                                        </li>
+                                        <li class="radio">
+                                            <input type="radio" id="input-4" name="option-1">
+                                            <label for="input-4"><b>4000 шт</b>5000 p.</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="product__action action">
+                                <button class="product__to-cart action__btn">Купить</button>
+                                <div class="product__stack">
+                                    <button class="decrement">-</button>
+                                    <input type="text" size="3" value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+
+                            <div class="product__short-description">
+                                Томат Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.Томат
+                                Компанеро F1 - высокоурожайный гибрид красного томата для открытого грунта.
+                            </div>
+
+                            <div class="product__manufacture">
+                                <span></span>
+                                <ul class="manufacture__list">
+                                    <li><a href="#"><picture><source srcset="../icons/greentime.svg" type="image/webp"><img src="../icons/greentime.svg" alt="Гринтайм"></picture></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product__attributes">
+                            аттрибуты
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="swiper-slide ">
-            <div class="swiper-slide product">
-                <div class="product product--mini-card" data-tilt>
 
-                    <a href="catalog/seeds/tomato" class="product__img">
-                        <picture>
-                            <source data-srcset="image/tomat.webp" type="image/webp" class="swiper-lazy">
-                            <img alt="Томат безрассадный" class="swiper-lazy swiper-lazy-loaded"
-                                data-src="image/tomat.jpg">
-                        </picture>
-                        <div class="swiper-lazy-preloader"></div>
-                    </a>
-                    <a href="catalog/seeds/tomato" class="product__name">Томат безрассадный</a>
-                    <div class="product__action action">
-                        <button class="action__btn">Заказать</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="swiper-slide product">
-                <div class="product product--mini-card" data-tilt>
-
-                    <a href="catalog/seeds/tomato" class="product__img">
-                        <picture>
-                            <source data-srcset="image/tomat.webp" type="image/webp" class="swiper-lazy">
-                            <img alt="Томат безрассадный" class="swiper-lazy swiper-lazy-loaded"
-                                data-src="image/tomat.jpg">
-                        </picture>
-                        <div class="swiper-lazy-preloader"></div>
-                    </a>
-                    <a href="catalog/seeds/tomato" class="product__name">Томат безрассадный</a>
-                    <div class="product__action action">
-                        <button class="action__btn">Заказать</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="swiper-slide product">
-                <div class="product product--mini-card" data-tilt>
-
-                    <a href="catalog/seeds/tomato" class="product__img">
-                        <picture>
-                            <source data-srcset="image/tomat.webp" type="image/webp" class="swiper-lazy">
-                            <img alt="Томат безрассадный" class="swiper-lazy swiper-lazy-loaded"
-                                data-src="image/tomat.jpg">
-                        </picture>
-                        <div class="swiper-lazy-preloader"></div>
-                    </a>
-                    <a href="catalog/seeds/tomato" class="product__name">Томат безрассадный</a>
-                    <div class="product__action action">
-                        <button class="action__btn">Заказать</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-        </div>
-
-    </div>
-    <div class="section__separator section__separator--down"></div>
-</section>
-
-            <section class="section">
-    
-    <div class="section__container __container">
-        <h2 class="section__title">каталог</h2>
-        <div class="section__content">
-            <div class="catalog catalog--grid">
-                <ul class="catalog__list">
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/seeds.webp" type="image/webp"><img src="image/seeds.jpg" alt="Семена"></picture>
-                            </div>
-                            <span class="item__name">Семена</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/flowers.webp" type="image/webp"><img src="image/flowers.jpg" alt="Рассада цветов"></picture>
-                            </div>
-                            <span class="item__name">Рассада цветов</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/sistema-kapelnogo-poliva.webp" type="image/webp"><img src="image/sistema-kapelnogo-poliva.jpg" alt="Всё для полива"></picture>
-                            </div>
-                            <span class="item__name">Всё для полива</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/garden-fertilizer.webp" type="image/webp"><img src="image/garden-fertilizer.jpg" alt="Удобрения"></picture>
-                            </div>
-                            <span class="item__name">Удобрения</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/sejalki.webp" type="image/webp"><img src="image/sejalki.jpg" alt="Сеялки и комплектующие"></picture>
-                            </div>
-                            <span class="item__name">Сеялки и комплектующие</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/szr.webp" type="image/webp"><img src="image/szr.jpg" alt="Средства защиты растений"></picture>
-                            </div>
-                            <span class="item__name">Средства защиты растений</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/plenka.webp" type="image/webp"><img src="image/plenka.jpg" alt="Укрывной материал, затенение"></picture>
-                            </div>
-                            <span class="item__name">Укрывной материал, затенение</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/dop_product.webp" type="image/webp"><img src="image/dop_product.jpg" alt="Сопутствующие товары"></picture>
-                            </div>
-                            <span class="item__name">Сопутствующие товары</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/teplica.webp" type="image/webp"><img src="image/teplica.jpg" alt="ПОЛИЭТИЛЕНОВАЯ ПЛЕНКА, КОМПЛЕКТУЮЩИЕ ДЛЯ ТЕПЛИЦ"></picture>
-                            </div>
-                            <span class="item__name">ПОЛИЭТИЛЕНОВАЯ ПЛЕНКА, КОМПЛЕКТУЮЩИЕ ДЛЯ ТЕПЛИЦ</span>
-                        </a>
-                    </li>
-                    <li class="catalog__item item" data-tilt data-tilt-reset="false">
-                        <a href="#" class="item__link">
-                            <div class="item__img">
-                                <picture><source srcset="image/kasseta.webp" type="image/webp"><img src="image/kasseta.jpg" alt="КАССЕТЫ И СТАКАНЫ ДЛЯ РАССАДЫ, КАШПО ДЛЯ ЦВЕТОВ"></picture>
-                            </div>
-                            <span class="item__name">КАССЕТЫ И СТАКАНЫ ДЛЯ РАССАДЫ, КАШПО ДЛЯ ЦВЕТОВ</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="section__separator section__separator--footer"></div>
-    
-</section>
+                <div class="section__separator section__separator--footer"></div>
+            </section>
         </main>
 
         <footer class="footer">
