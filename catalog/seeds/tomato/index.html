@@ -474,8 +474,13 @@
     <div class="wrapper">
 
         <main>
+
+            <section class="section">
+                <!-- пустая секция для правильного позиционирования линии сепаратора-->
+            </section>
+
             <section class="section section--white">
-                <div class="section__separator section__separator--up"></div>
+                <div class="section__separator"></div>
 
                 <div class="section__container __container product-page">
                     <div class="product-page__left-column">
@@ -722,9 +727,10 @@
 
                                     <div class="product__review">
                                         <div class="review">
+                                            <p class="notification empty">Нет отзывов об этом товаре</p>
+                                            <div class="review__list"
+                                                onclick="this.closest('.review').classList.remove('expanded')">
 
-                                            <div class="review__list">
-                                                <p class="notification empty">Нет отзывов об этом товаре</p>
                                                 <div class="review__item">
                                                     <div class="review__name">Лагутин Виталий</div>
                                                     <div class="__row __row--space-between">
@@ -990,9 +996,24 @@
                                                         data-show-text="...читать далее"
                                                         data-hide-text="...свернуть текст"></button>
                                                 </div>
+
+                                                <div class="review__pagination">
+
+                                                    <div>Показано с 1 по 5 из 6 (всего 2 страниц)</div>
+
+                                                    <ul class="pagination">
+                                                        <li class="active"><span>1</span></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">&gt;</a></li>
+                                                        <li><a href="#">&gt;|</a></li>
+                                                    </ul>
+
+                                                </div>
+
                                             </div>
 
                                             <div class="review__new">
+
                                                 <form action="#" class="review__form form">
                                                     <fieldset>
                                                         <legend>Написать отзыв</legend>
@@ -1043,7 +1064,7 @@
                                                         data-show-text="Написать отзыв"
                                                         data-hide-text="&#10008;"></button>
                                                 </form>
-                                                <div></div>
+
                                             </div>
 
                                         </div>
@@ -1055,19 +1076,29 @@
                     </div>
                 </div>
 
-                <div class="section__separator section__separator--footer"></div>
             </section>
+
         </main>
 
-        <footer class="footer">
+        <div class="separator--footer"></div>
+    </div>
+    <footer class="footer">
     <div class="footer__content">
         <div class="footer__container __container">
             <p class="copyright">Все права не защищены</p>
         </div>
     </div>
 
+    <script>
+        const footer = document.querySelector('footer.footer');
+        const style = document.createElement('style');
+        style.innerHTML = ` :root{
+            --footer-height: ${footer.getBoundingClientRect().height}px;
+        }`
+        footer.appendChild(style);
+    </script>
+
 </footer>
-    </div>
 
 </body>
 

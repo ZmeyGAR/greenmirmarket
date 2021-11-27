@@ -476,15 +476,19 @@
         <main>
 
             <section class="section information-header">
+
     <div class="section__container __container information-header__container">
         <div class="information-header__content">
             <h1 class="information-header__title">О нас</h1>
         </div>
     </div>
-    <div class="section__separator section__separator--down"></div>
+
 </section>
 
-            <section class="section information-content">
+            <section class="section section--white information-content">
+
+                <div class="section__separator"></div>
+
                 <div class="section__container __container">
                     <div class="information-content__content">
                         <h2>Наш магазин успешно работает в сфере сельхознаправления более 10 лет.</h2>
@@ -502,20 +506,29 @@
 
                     </div>
                 </div>
-                <div class="section__separator section__separator--footer"></div>
             </section>
 
         </main>
 
-        <footer class="footer">
+        <div class="separator--footer"></div>
+    </div>
+    <footer class="footer">
     <div class="footer__content">
         <div class="footer__container __container">
             <p class="copyright">Все права не защищены</p>
         </div>
     </div>
 
+    <script>
+        const footer = document.querySelector('footer.footer');
+        const style = document.createElement('style');
+        style.innerHTML = ` :root{
+            --footer-height: ${footer.getBoundingClientRect().height}px;
+        }`
+        footer.appendChild(style);
+    </script>
+
 </footer>
-    </div>
 
 </body>
 
