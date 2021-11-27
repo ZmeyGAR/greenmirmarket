@@ -522,31 +522,31 @@
                             <div class="swiper product__galery--main-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="product__image">
+                                        <div class="product__image" data-tilt>
                                             <picture>
-                                                <source data-srcset="../image/soya.webp" type="image/webp"
+                                                <source data-srcset="image/soya.webp" type="image/webp"
                                                     class="swiper-lazy">
-                                                <img src="../image/soya.jpg" alt="Томат" class="swiper-lazy">
+                                                <img src="image/soya.jpg" alt="Томат" class="swiper-lazy">
                                             </picture>
                                         </div>
 
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="product__image">
+                                        <div class="product__image" data-tilt>
                                             <picture>
-                                                <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                <source data-srcset="image/amigo.webp" type="image/webp"
                                                     class="swiper-lazy">
-                                                <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                                <img src="image/amigo.jpg" alt="Томат" class="swiper-lazy">
                                             </picture>
                                         </div>
 
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="product__image">
+                                        <div class="product__image" data-tilt>
                                             <picture>
-                                                <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                <source data-srcset="image/amigo.webp" type="image/webp"
                                                     class="swiper-lazy">
-                                                <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                                <img src="image/amigo.jpg" alt="Томат" class="swiper-lazy">
                                             </picture>
                                         </div>
                                     </div>
@@ -557,29 +557,29 @@
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="product__image">
+                                            <div class="product__image" data-tilt>
                                                 <picture>
-                                                    <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                    <source data-srcset="image/amigo.webp" type="image/webp"
                                                         class="swiper-lazy">
-                                                    <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                                    <img src="image/amigo.jpg" alt="Томат" class="swiper-lazy">
                                                 </picture>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="product__image">
+                                            <div class="product__image" data-tilt>
                                                 <picture>
-                                                    <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                    <source data-srcset="image/amigo.webp" type="image/webp"
                                                         class="swiper-lazy">
-                                                    <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                                    <img src="image/amigo.jpg" alt="Томат" class="swiper-lazy">
                                                 </picture>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
-                                            <div class="product__image">
+                                            <div class="product__image" data-tilt>
                                                 <picture>
-                                                    <source data-srcset="../image/amigo.webp" type="image/webp"
+                                                    <source data-srcset="image/amigo.webp" type="image/webp"
                                                         class="swiper-lazy">
-                                                    <img src="../image/amigo.jpg" alt="Томат" class="swiper-lazy">
+                                                    <img src="image/amigo.jpg" alt="Томат" class="swiper-lazy">
                                                 </picture>
                                             </div>
                                         </div>
@@ -594,7 +594,7 @@
                         <div class="product__tools">
                             <h1 class="section__title product__title">Томат Компанеро F1</h1>
                             <div class="__row">
-                                <div class="product__rating product__rating--no-touch">
+                                <div class="rating rating--no-touch product__rating">
                                     <fieldset>
                                         <input type="radio" id="star87_5" name="rating_87" value="5">
                                         <label for="star87_5" title="Превосходно">5 stars</label>
@@ -667,14 +667,390 @@
                             </div>
 
                             <div class="product__manufacture">
-                                <span></span>
+                                <span>Производство</span>
                                 <ul class="manufacture__list">
-                                    <li><a href="#"><picture><source srcset="../icons/greentime.svg" type="image/webp"><img src="../icons/greentime.svg" alt="Гринтайм"></picture></a></li>
+                                    <li>
+                                        <a href="#">
+                                            <picture><source srcset="icons/greentime.svg" type="image/webp"><img src="icons/greentime.svg" alt="Гринтайм" /></picture>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="product__attributes">
-                            аттрибуты
+                            <div class="attributes">
+                                <ul class="attributes__tabs">
+                                    <li class="attributes__tab" data-tab="product__description">Описание</li>
+                                    <li class="attributes__tab" data-tab="product__review">Отзывы</li>
+                                </ul>
+                                <div class="attributes__content">
+
+                                    <div class="product__description">
+                                        <p>Томат Компанеро F1 - высокоурожайный гибрид красного томата для открытого
+                                            грунта.</p>
+
+                                        <p>Производство – GREENTIME</p>
+
+                                        <p>Томат для открытого грунта, детерминантного типа с ярко красными плодами.
+                                            Скороспелый и с хорошей укрывистостью листьями, что спасает от солнечных
+                                            ожогов.
+                                            Плоды крепкие, не трескаются. Отличная завязываемость даже в жару, хорошо
+                                            транспортируется.</p>
+
+                                        <p>Характеристика:</p>
+
+                                        <p>- Тип – детерминантный тип куста</p>
+
+                                        <p>- Срок созревания очень ранний 65 дней от высадки рассады.</p>
+
+                                        <p>- Урожай высокий.</p>
+
+                                        <p>- Насыщенно красный</p>
+
+                                        <p>- Плоды средней массой 160-180 гр.</p>
+
+                                        <p>- Плоды томата очень плотные, транспортабельные.</p>
+
+                                        <p>- Вкус отличный.</p>
+
+                                        <p>- Устойчив к альтернариозу, кладоспориозу и вирусной инфекции, толерантен к
+                                            фитофторозу.</p>
+
+                                        <p>Закажите семена томата и других овощей в нашем интернет-магазине с доставкой
+                                            почтой и транспортными компаниями по всей России!</p>
+                                    </div>
+
+                                    <div class="product__review">
+                                        <div class="review">
+
+                                            <div class="review__list">
+                                                <p class="notification empty">Нет отзывов об этом товаре</p>
+                                                <div class="review__item">
+                                                    <div class="review__name">Лагутин Виталий</div>
+                                                    <div class="__row __row--space-between">
+                                                        <div class="rating" name="review-rating">
+                                                            <fieldset>
+                                                                <input type="radio" id="star87_5" name="rating_87"
+                                                                    value="5">
+                                                                <label for="star87_5" title="Превосходно">5
+                                                                    stars</label>
+                                                                <input type="radio" id="star87_4" name="rating_87"
+                                                                    value="4">
+                                                                <label for="star87_4" title="Отлично">4 stars</label>
+                                                                <input type="radio" id="star87_3" name="rating_87"
+                                                                    value="3">
+                                                                <label for="star87_3" title="Хорошо">3 stars</label>
+                                                                <input type="radio" id="star87_2" name="rating_87"
+                                                                    value="2">
+                                                                <label for="star87_2" title="Неплохо">2 stars</label>
+                                                                <input type="radio" id="star87_1" name="rating_87"
+                                                                    value="1">
+                                                                <label for="star87_1" title="Плохо">1 stars</label>
+                                                            </fieldset>
+                                                        </div>
+
+                                                        <span>26.11.2021 16:30</span>
+                                                    </div>
+                                                    <div class="review__text">Далеко-далеко за словесными горами в
+                                                        стране гласных и согласных живут рыбные тексты. Маленький но
+                                                        великий свой lorem все текстов заманивший сих вопрос, океана
+                                                        имени осталось не инициал, по всей оксмокс знаках скатился
+                                                        деревни!
+                                                        Большой обеспечивает вершину которое! Лучше возвращайся путь
+                                                        семь это ведущими! Вскоре безопасную выйти то рыбного города
+                                                        последний своего семь моей, рукопись пояс составитель, осталось
+                                                        жизни первую. Рукописи вершину но одна.
+                                                        Агентство свою, курсивных там буквенных прямо они последний
+                                                        океана обеспечивает сбить семь она заманивший первую если рот.
+                                                        Первую, текст запятой. Напоивший рукописи на берегу своего
+                                                        приставка скатился! Единственное рукопись о реторический!
+                                                        Алфавит рыбного от всех пунктуация вопрос, ему свой океана
+                                                        которой дал что, толку путь строчка эта. Дал которое курсивных
+                                                        себя назад все всеми прямо заголовок? Инициал семь предупредила
+                                                        необходимыми домах жаренные!
+                                                        Путь, силуэт. Использовало свой своих снова несколько проектах
+                                                        сих текстов, свое вдали если толку эта, он грустный. Диких
+                                                        грамматики буквоград рукописи залетают, пустился ты напоивший
+                                                        безопасную предупреждал все дорогу знаках!
+                                                    </div>
+                                                    <button class="review__more"
+                                                        onclick="this.parentNode.classList.toggle('expanded')"
+                                                        data-show-text="...читать далее"
+                                                        data-hide-text="...свернуть текст"></button>
+                                                </div>
+                                                <div class="review__item">
+                                                    <div class="review__name">Лагутин Виталий</div>
+                                                    <div class="__row __row--space-between">
+                                                        <div class="rating" name="review-rating">
+                                                            <fieldset>
+                                                                <input type="radio" id="star87_5" name="rating_87"
+                                                                    value="5">
+                                                                <label for="star87_5" title="Превосходно">5
+                                                                    stars</label>
+                                                                <input type="radio" id="star87_4" name="rating_87"
+                                                                    value="4">
+                                                                <label for="star87_4" title="Отлично">4 stars</label>
+                                                                <input type="radio" id="star87_3" name="rating_87"
+                                                                    value="3">
+                                                                <label for="star87_3" title="Хорошо">3 stars</label>
+                                                                <input type="radio" id="star87_2" name="rating_87"
+                                                                    value="2">
+                                                                <label for="star87_2" title="Неплохо">2 stars</label>
+                                                                <input type="radio" id="star87_1" name="rating_87"
+                                                                    value="1">
+                                                                <label for="star87_1" title="Плохо">1 stars</label>
+                                                            </fieldset>
+                                                        </div>
+
+                                                        <span>26.11.2021 16:30</span>
+                                                    </div>
+                                                    <div class="review__text">Далеко-далеко за словесными горами в
+                                                        стране гласных и согласных живут рыбные тексты. Маленький но
+                                                        великий свой lorem все текстов заманивший сих вопрос, океана
+                                                        имени осталось не инициал, по всей оксмокс знаках скатился
+                                                        деревни!
+                                                        Большой обеспечивает вершину которое! Лучше возвращайся путь
+                                                        семь это ведущими! Вскоре безопасную выйти то рыбного города
+                                                        последний своего семь моей, рукопись пояс составитель, осталось
+                                                        жизни первую. Рукописи вершину но одна.
+                                                        Агентство свою, курсивных там буквенных прямо они последний
+                                                        океана обеспечивает сбить семь она заманивший первую если рот.
+                                                        Первую, текст запятой. Напоивший рукописи на берегу своего
+                                                        приставка скатился! Единственное рукопись о реторический!
+                                                        Алфавит рыбного от всех пунктуация вопрос, ему свой океана
+                                                        которой дал что, толку путь строчка эта. Дал которое курсивных
+                                                        себя назад все всеми прямо заголовок? Инициал семь предупредила
+                                                        необходимыми домах жаренные!
+                                                        Путь, силуэт. Использовало свой своих снова несколько проектах
+                                                        сих текстов, свое вдали если толку эта, он грустный. Диких
+                                                        грамматики буквоград рукописи залетают, пустился ты напоивший
+                                                        безопасную предупреждал все дорогу знаках!
+                                                    </div>
+                                                    <button class="review__more"
+                                                        onclick="this.parentNode.classList.toggle('expanded')"
+                                                        data-show-text="...читать далее"
+                                                        data-hide-text="...свернуть текст"></button>
+                                                </div>
+                                                <div class="review__item">
+                                                    <div class="review__name">Лагутин Виталий</div>
+                                                    <div class="__row __row--space-between">
+                                                        <div class="rating" name="review-rating">
+                                                            <fieldset>
+                                                                <input type="radio" id="star87_5" name="rating_87"
+                                                                    value="5">
+                                                                <label for="star87_5" title="Превосходно">5
+                                                                    stars</label>
+                                                                <input type="radio" id="star87_4" name="rating_87"
+                                                                    value="4">
+                                                                <label for="star87_4" title="Отлично">4 stars</label>
+                                                                <input type="radio" id="star87_3" name="rating_87"
+                                                                    value="3">
+                                                                <label for="star87_3" title="Хорошо">3 stars</label>
+                                                                <input type="radio" id="star87_2" name="rating_87"
+                                                                    value="2">
+                                                                <label for="star87_2" title="Неплохо">2 stars</label>
+                                                                <input type="radio" id="star87_1" name="rating_87"
+                                                                    value="1">
+                                                                <label for="star87_1" title="Плохо">1 stars</label>
+                                                            </fieldset>
+                                                        </div>
+
+                                                        <span>26.11.2021 16:30</span>
+                                                    </div>
+                                                    <div class="review__text">Далеко-далеко за словесными горами в
+                                                        стране гласных и согласных живут рыбные тексты. Маленький но
+                                                        великий свой lorem все текстов заманивший сих вопрос, океана
+                                                        имени осталось не инициал, по всей оксмокс знаках скатился
+                                                        деревни!
+                                                        Большой обеспечивает вершину которое! Лучше возвращайся путь
+                                                        семь это ведущими! Вскоре безопасную выйти то рыбного города
+                                                        последний своего семь моей, рукопись пояс составитель, осталось
+                                                        жизни первую. Рукописи вершину но одна.
+                                                        Агентство свою, курсивных там буквенных прямо они последний
+                                                        океана обеспечивает сбить семь она заманивший первую если рот.
+                                                        Первую, текст запятой. Напоивший рукописи на берегу своего
+                                                        приставка скатился! Единственное рукопись о реторический!
+                                                        Алфавит рыбного от всех пунктуация вопрос, ему свой океана
+                                                        которой дал что, толку путь строчка эта. Дал которое курсивных
+                                                        себя назад все всеми прямо заголовок? Инициал семь предупредила
+                                                        необходимыми домах жаренные!
+                                                        Путь, силуэт. Использовало свой своих снова несколько проектах
+                                                        сих текстов, свое вдали если толку эта, он грустный. Диких
+                                                        грамматики буквоград рукописи залетают, пустился ты напоивший
+                                                        безопасную предупреждал все дорогу знаках!
+                                                    </div>
+                                                    <button class="review__more"
+                                                        onclick="this.parentNode.classList.toggle('expanded')"
+                                                        data-show-text="...читать далее"
+                                                        data-hide-text="...свернуть текст"></button>
+                                                </div>
+                                                <div class="review__item">
+                                                    <div class="review__name">Лагутин Виталий</div>
+                                                    <div class="__row __row--space-between">
+                                                        <div class="rating" name="review-rating">
+                                                            <fieldset>
+                                                                <input type="radio" id="star87_5" name="rating_87"
+                                                                    value="5">
+                                                                <label for="star87_5" title="Превосходно">5
+                                                                    stars</label>
+                                                                <input type="radio" id="star87_4" name="rating_87"
+                                                                    value="4">
+                                                                <label for="star87_4" title="Отлично">4 stars</label>
+                                                                <input type="radio" id="star87_3" name="rating_87"
+                                                                    value="3">
+                                                                <label for="star87_3" title="Хорошо">3 stars</label>
+                                                                <input type="radio" id="star87_2" name="rating_87"
+                                                                    value="2">
+                                                                <label for="star87_2" title="Неплохо">2 stars</label>
+                                                                <input type="radio" id="star87_1" name="rating_87"
+                                                                    value="1">
+                                                                <label for="star87_1" title="Плохо">1 stars</label>
+                                                            </fieldset>
+                                                        </div>
+
+                                                        <span>26.11.2021 16:30</span>
+                                                    </div>
+                                                    <div class="review__text">Далеко-далеко за словесными горами в
+                                                        стране гласных и согласных живут рыбные тексты. Маленький но
+                                                        великий свой lorem все текстов заманивший сих вопрос, океана
+                                                        имени осталось не инициал, по всей оксмокс знаках скатился
+                                                        деревни!
+                                                        Большой обеспечивает вершину которое! Лучше возвращайся путь
+                                                        семь это ведущими! Вскоре безопасную выйти то рыбного города
+                                                        последний своего семь моей, рукопись пояс составитель, осталось
+                                                        жизни первую. Рукописи вершину но одна.
+                                                        Агентство свою, курсивных там буквенных прямо они последний
+                                                        океана обеспечивает сбить семь она заманивший первую если рот.
+                                                        Первую, текст запятой. Напоивший рукописи на берегу своего
+                                                        приставка скатился! Единственное рукопись о реторический!
+                                                        Алфавит рыбного от всех пунктуация вопрос, ему свой океана
+                                                        которой дал что, толку путь строчка эта. Дал которое курсивных
+                                                        себя назад все всеми прямо заголовок? Инициал семь предупредила
+                                                        необходимыми домах жаренные!
+                                                        Путь, силуэт. Использовало свой своих снова несколько проектах
+                                                        сих текстов, свое вдали если толку эта, он грустный. Диких
+                                                        грамматики буквоград рукописи залетают, пустился ты напоивший
+                                                        безопасную предупреждал все дорогу знаках!
+                                                    </div>
+                                                    <button class="review__more"
+                                                        onclick="this.parentNode.classList.toggle('expanded')"
+                                                        data-show-text="...читать далее"
+                                                        data-hide-text="...свернуть текст"></button>
+                                                </div>
+                                                <div class="review__item">
+                                                    <div class="review__name">Лагутин Виталий</div>
+                                                    <div class="__row __row--space-between">
+                                                        <div class="rating" name="review-rating">
+                                                            <fieldset>
+                                                                <input type="radio" id="star87_5" name="rating_87"
+                                                                    value="5">
+                                                                <label for="star87_5" title="Превосходно">5
+                                                                    stars</label>
+                                                                <input type="radio" id="star87_4" name="rating_87"
+                                                                    value="4">
+                                                                <label for="star87_4" title="Отлично">4 stars</label>
+                                                                <input type="radio" id="star87_3" name="rating_87"
+                                                                    value="3">
+                                                                <label for="star87_3" title="Хорошо">3 stars</label>
+                                                                <input type="radio" id="star87_2" name="rating_87"
+                                                                    value="2">
+                                                                <label for="star87_2" title="Неплохо">2 stars</label>
+                                                                <input type="radio" id="star87_1" name="rating_87"
+                                                                    value="1">
+                                                                <label for="star87_1" title="Плохо">1 stars</label>
+                                                            </fieldset>
+                                                        </div>
+
+                                                        <span>26.11.2021 16:30</span>
+                                                    </div>
+                                                    <div class="review__text">Далеко-далеко за словесными горами в
+                                                        стране гласных и согласных живут рыбные тексты. Маленький но
+                                                        великий свой lorem все текстов заманивший сих вопрос, океана
+                                                        имени осталось не инициал, по всей оксмокс знаках скатился
+                                                        деревни!
+                                                        Большой обеспечивает вершину которое! Лучше возвращайся путь
+                                                        семь это ведущими! Вскоре безопасную выйти то рыбного города
+                                                        последний своего семь моей, рукопись пояс составитель, осталось
+                                                        жизни первую. Рукописи вершину но одна.
+                                                        Агентство свою, курсивных там буквенных прямо они последний
+                                                        океана обеспечивает сбить семь она заманивший первую если рот.
+                                                        Первую, текст запятой. Напоивший рукописи на берегу своего
+                                                        приставка скатился! Единственное рукопись о реторический!
+                                                        Алфавит рыбного от всех пунктуация вопрос, ему свой океана
+                                                        которой дал что, толку путь строчка эта. Дал которое курсивных
+                                                        себя назад все всеми прямо заголовок? Инициал семь предупредила
+                                                        необходимыми домах жаренные!
+                                                        Путь, силуэт. Использовало свой своих снова несколько проектах
+                                                        сих текстов, свое вдали если толку эта, он грустный. Диких
+                                                        грамматики буквоград рукописи залетают, пустился ты напоивший
+                                                        безопасную предупреждал все дорогу знаках!
+                                                    </div>
+                                                    <button class="review__more"
+                                                        onclick="this.parentNode.classList.toggle('expanded')"
+                                                        data-show-text="...читать далее"
+                                                        data-hide-text="...свернуть текст"></button>
+                                                </div>
+                                            </div>
+
+                                            <div class="review__new">
+                                                <form action="#" class="review__form form">
+                                                    <fieldset>
+                                                        <legend>Написать отзыв</legend>
+                                                        <div class="form__control form__control--text">
+                                                            <label for="review-name">Ваше имя</label>
+                                                            <input type="text" name="review-name" id="review-name"
+                                                                required>
+                                                        </div>
+
+                                                        <div class="rating">
+                                                            <legend class="rating__legend">Ваша оценка :</legend>
+                                                            <fieldset>
+                                                                <input type="radio" id="star0_5" name="review-rating"
+                                                                    value="5" required>
+                                                                <label for="star0_5" title="Превосходно">5
+                                                                    stars</label>
+                                                                <input type="radio" id="star0_4" name="review-rating"
+                                                                    value="4">
+                                                                <label for="star0_4" title="Отлично">4 stars</label>
+                                                                <input type="radio" id="star0_3" name="review-rating"
+                                                                    value="3">
+                                                                <label for="star0_3" title="Хорошо">3 stars</label>
+                                                                <input type="radio" id="star0_2" name="review-rating"
+                                                                    value="2">
+                                                                <label for="star0_2" title="Неплохо">2 stars</label>
+                                                                <input type="radio" id="star0_1" name="review-rating"
+                                                                    value="1">
+                                                                <label for="star0_1" title="Плохо">1 stars</label>
+                                                            </fieldset>
+                                                        </div>
+
+                                                        <div class="form__control form__control--textarea">
+                                                            <label for="review-text">Ваш комментарий</label>
+                                                            <textarea name="review-text" id="review-text" required
+                                                                minlength="25" maxlength="1000"></textarea>
+                                                        </div>
+
+                                                        <div class="form__btns">
+                                                            <button type=" submit" class="form__btn form__btn--submit"
+                                                                data-send-text="Отправить"
+                                                                data-wait-text="Отправляем...">
+                                                            </button>
+                                                        </div>
+
+                                                    </fieldset>
+                                                    <button type="button" class="review__new--btn"
+                                                        onclick="this.closest('.review').classList.toggle('expanded')"
+                                                        data-show-text="Написать отзыв"
+                                                        data-hide-text="&#10008;"></button>
+                                                </form>
+                                                <div></div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
