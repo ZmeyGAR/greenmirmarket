@@ -375,7 +375,7 @@
                 <picture><source srcset="icons/logo.svg" type="image/webp"><img src="icons/logo.svg" alt="Логотип магазина" class="logo__img"></picture>
             </a>
         </div>
-        <nav class="header__nav nav" data-da=".header__burger, 569.98, 2">
+        <nav class="header__nav nav" data-da=".sidebar__nav, 569.98, 2">
             <ul class="nav__list">
                 <li class="nav__item current">
                     <a href="./" class="nav__link ">Главная</a>
@@ -423,50 +423,441 @@
                         <button class="lk__btn lk__sign-up">Войти</button>
                     </div>
                 </li>
-                <li class="widgets__item">
-                    <div class="header__burger" onclick="this.classList.toggle('open')">
-                        <button class="burger">
-                            <span class="burger__icon"></span>
-                        </button>
-                    </div>
-                </li>
             </ul>
         </div>
 
     </div>
-    <div class="header__mobile modile-nav">
-        <ul class="modile-nav__list">
-            <li class="modile-nav__item">
-                <button class="modile-nav__btn btn-main">
-                    <span class="modile-nav__icon btn-main__icon"></span>
+    <div class="header__mobile mobile-nav">
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+                <button class="mobile-nav__btn btn-main" data-target="sidebar__nav">
+                    <span class="mobile-nav__icon btn-main__icon"></span>
                     Главная
                 </button>
             </li>
-            <li class="modile-nav__item">
-                <button class="modile-nav__btn btn-catalog">
-                    <span class="modile-nav__icon btn-catalog__icon"></span>
+            <li class="mobile-nav__item">
+                <button class="mobile-nav__btn btn-catalog" data-target="sidebar__catalog">
+                    <span class="mobile-nav__icon btn-catalog__icon"></span>
                     Каталог
                 </button>
             </li>
-            <li class="modile-nav__item">
-                <button class="modile-nav__btn btn-cart">
-                    <span class="modile-nav__icon btn-cart__icon"></span>
+            <li class="mobile-nav__item">
+                <button class="mobile-nav__btn btn-cart" data-target="sidebar__cart">
+                    <span class="mobile-nav__icon btn-cart__icon"></span>
                     Корзина
                 </button>
             </li>
-            <li class="modile-nav__item">
-                <button class="modile-nav__btn btn-favorites">
-                    <span class="modile-nav__icon btn-favorites__icon"></span>
+            <li class="mobile-nav__item">
+                <button class="mobile-nav__btn btn-favorites" data-target="sidebar__favorites">
+                    <span class="mobile-nav__icon btn-favorites__icon"></span>
                     Избранное
                 </button>
             </li>
-            <li class="modile-nav__item">
-                <button class="modile-nav__btn btn-lk">
-                    <span class="modile-nav__icon btn-lk__icon"></span>
+            <li class="mobile-nav__item">
+                <button class="mobile-nav__btn btn-lk" data-target="sidebar__lk">
+                    <span class="mobile-nav__icon btn-lk__icon"></span>
                     Войти
                 </button>
             </li>
         </ul>
+        <div class="mobile-nav__content sidebar">
+            <div class="sidebar__nav" id="sidebar__nav">
+
+            </div>
+            <div class="sidebar__catalog" id="sidebar__catalog">
+                <div class="category-list">
+    <span class="category-list__title">Каталог</span>
+    <ul class="category-list__list">
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Семена</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Рассада цветов</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Всё для полива</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Удобрения</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Средства защиты растений</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Сеялки и комплектующие</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Укрывной материал, затенение</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Сопутствующие товары</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">Кассеты и стаканы для рассады, кашпо для цветов</a>
+        </li>
+        <li class="category-list__item" data-tilt data-tilt-axis="y">
+            <a href="#">потиэлиленовая пленка, комплектующие для теплиц</a>
+        </li>
+
+    </ul>
+</div>
+            </div>
+            <div class="sidebar__cart" id="sidebar__cart">
+                <div id="cart" class="mini-cart">
+
+                    <div data-loading-text="Загрузка..." class="mini-cart__title">
+                        <span id="cart-total">Товаров: 1 (3625.00р.)</span>
+                    </div>
+
+                    <ul class="mini-cart__list">
+                        <li class="mini-cart__goods goods-card">
+
+                            <div class="goods-card__info">
+                                <a href="#" class="goods-card__img">
+                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                </a>
+                                <div class="goods-card__text">
+                                    <span class="goods-card__name"><a href="#">Морковь Абако F1. Фр.2,2-2,4</a></span>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
+                                    <span class="goods-card__price">155550.00p</span>
+                                </div>
+                            </div>
+
+                            <div class="goods-card__action">
+
+                                <div class="goods-card__quantity product__stack">
+                                    <button class="decrement">-</button>
+                                    <input type="text" size="3" value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
+                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+
+                        </li>
+                        <li class="mini-cart__goods goods-card">
+
+                            <div class="goods-card__info">
+                                <a href="#" class="goods-card__img">
+                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                </a>
+                                <div class="goods-card__text">
+                                    <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <span class="goods-card__price">155550.00p</span>
+                                </div>
+                            </div>
+
+                            <div class="goods-card__action">
+
+                                <div class="goods-card__quantity product__stack">
+                                    <button class="decrement">-</button>
+                                    <input type="text" size="3" value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
+                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+
+                        </li>
+                        <li class="mini-cart__goods goods-card">
+
+                            <div class="goods-card__info">
+                                <a href="#" class="goods-card__img">
+                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                </a>
+                                <div class="goods-card__text">
+                                    <span class="goods-card__name"><a href="#">Морковь Абако F1. Фр.2,2-2,4</a></span>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
+                                    <span class="goods-card__price">155550.00p</span>
+                                </div>
+                            </div>
+
+                            <div class="goods-card__action">
+
+                                <div class="goods-card__quantity product__stack">
+                                    <button class="decrement">-</button>
+                                    <input type="text" size="3" value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
+                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+
+                        </li>
+                        <li class="mini-cart__goods goods-card">
+
+                            <div class="goods-card__info">
+                                <a href="#" class="goods-card__img">
+                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                </a>
+                                <div class="goods-card__text">
+                                    <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <span class="goods-card__price">155550.00p</span>
+                                </div>
+                            </div>
+
+                            <div class="goods-card__action">
+
+                                <div class="goods-card__quantity product__stack">
+                                    <button class="decrement">-</button>
+                                    <input type="text" size="3" value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
+                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+
+                        </li>
+                        <li class="mini-cart__goods goods-card">
+
+                            <div class="goods-card__info">
+                                <a href="#" class="goods-card__img">
+                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                </a>
+                                <div class="goods-card__text">
+                                    <span class="goods-card__name"><a href="#">Морковь Абако F1. Фр.2,2-2,4</a></span>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
+                                    <span class="goods-card__price">155550.00p</span>
+                                </div>
+                            </div>
+
+                            <div class="goods-card__action">
+
+                                <div class="goods-card__quantity product__stack">
+                                    <button class="decrement">-</button>
+                                    <input type="text" size="3" value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
+                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+
+                        </li>
+                        <li class="mini-cart__goods goods-card">
+
+                            <div class="goods-card__info">
+                                <a href="#" class="goods-card__img">
+                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                </a>
+                                <div class="goods-card__text">
+                                    <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
+                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                    <span class="goods-card__price">155550.00p</span>
+                                </div>
+                            </div>
+
+                            <div class="goods-card__action">
+
+                                <div class="goods-card__quantity product__stack">
+                                    <button class="decrement">-</button>
+                                    <input type="text" size="3" value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
+                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <div class="mini-cart__totals">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Итого</td>
+                                    <td>3625.00р.</td>
+                                </tr>
+                                <tr>
+                                    <td>Всего</td>
+                                    <td>3625.00р.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="#" class="mini-cart__links"><span>К оформлению</span></a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="sidebar__favorites" id="sidebar__favorites">
+                <div class="mini-favorites" id="favorites">
+                    <div class="mini-favorites__title">Избранное</div>
+
+                    <ul class="mini-favorites__list">
+                        <li class="mini-favorites__goods goods-favorites">
+                            <div class="goods-favorites__info">
+                                <a href="#" class="goods-favorites__img">
+                                    <picture><source srcset="image/soya.webp" type="image/webp"><img src="image/soya.jpg" alt="Понравилось"></picture>
+                                </a>
+                                <div class="goods-favorites__text">
+                                    <span class="goods-favorites__name"><a href="#">Томат Компанеро F1</a></span>
+                                    <div class="goods-favorites__short-description">
+                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                        тексты. Несколько но использовало текста великий однажды рыбного заглавных выйти
+                                        предложения большого они за, всеми себя семантика. Она рукопись это живет!
+                                    </div>
+                                    <span class="goods-favorites__price">155550.00p</span>
+                                </div>
+                            </div>
+                            <div class="goods-favorites__action">
+                                <button class="goods-favorites__to-product" data-show-text="К товару"></button>
+                                <button class="goods-favorites__to-cart" data-show-text="В корзину"></button>
+                                <button class="goods-favorites__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+                        </li>
+                        <li class="mini-favorites__goods goods-favorites">
+                            <div class="goods-favorites__info">
+                                <a href="#" class="goods-favorites__img">
+                                    <picture><source srcset="image/soya.webp" type="image/webp"><img src="image/soya.jpg" alt="Понравилось"></picture>
+                                </a>
+                                <div class="goods-favorites__text">
+                                    <span class="goods-favorites__name"><a href="#">Томат Компанеро F1</a></span>
+                                    <div class="goods-favorites__short-description">
+                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                        тексты. Несколько но использовало текста великий однажды рыбного заглавных выйти
+                                        предложения большого они за, всеми себя семантика. Она рукопись это живет!
+                                    </div>
+                                    <span class="goods-favorites__price">155550.00p</span>
+                                </div>
+                            </div>
+                            <div class="goods-favorites__action">
+                                <button class="goods-favorites__to-product" data-show-text="К товару"></button>
+                                <button class="goods-favorites__to-cart" data-show-text="В корзину"></button>
+                                <button class="goods-favorites__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+                        </li>
+                        <li class="mini-favorites__goods goods-favorites">
+                            <div class="goods-favorites__info">
+                                <a href="#" class="goods-favorites__img">
+                                    <picture><source srcset="image/soya.webp" type="image/webp"><img src="image/soya.jpg" alt="Понравилось"></picture>
+                                </a>
+                                <div class="goods-favorites__text">
+                                    <span class="goods-favorites__name"><a href="#">Томат Компанеро F1</a></span>
+                                    <div class="goods-favorites__short-description">
+                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                        тексты. Несколько но использовало текста великий однажды рыбного заглавных выйти
+                                        предложения большого они за, всеми себя семантика. Она рукопись это живет!
+                                    </div>
+                                    <span class="goods-favorites__price">155550.00p</span>
+                                </div>
+                            </div>
+                            <div class="goods-favorites__action">
+                                <button class="goods-favorites__to-product" data-show-text="К товару"></button>
+                                <button class="goods-favorites__to-cart" data-show-text="В корзину"></button>
+                                <button class="goods-favorites__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+                        </li>
+                        <li class="mini-favorites__goods goods-favorites">
+                            <div class="goods-favorites__info">
+                                <a href="#" class="goods-favorites__img">
+                                    <picture><source srcset="image/soya.webp" type="image/webp"><img src="image/soya.jpg" alt="Понравилось"></picture>
+                                </a>
+                                <div class="goods-favorites__text">
+                                    <span class="goods-favorites__name"><a href="#">Томат Компанеро F1</a></span>
+                                    <div class="goods-favorites__short-description">
+                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                        тексты. Несколько но использовало текста великий однажды рыбного заглавных выйти
+                                        предложения большого они за, всеми себя семантика. Она рукопись это живет!
+                                    </div>
+                                    <span class="goods-favorites__price">155550.00p</span>
+                                </div>
+                            </div>
+                            <div class="goods-favorites__action">
+                                <button class="goods-favorites__to-product" data-show-text="К товару"></button>
+                                <button class="goods-favorites__to-cart" data-show-text="В корзину"></button>
+                                <button class="goods-favorites__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+                        </li>
+                        <li class="mini-favorites__goods goods-favorites">
+                            <div class="goods-favorites__info">
+                                <a href="#" class="goods-favorites__img">
+                                    <picture><source srcset="image/soya.webp" type="image/webp"><img src="image/soya.jpg" alt="Понравилось"></picture>
+                                </a>
+                                <div class="goods-favorites__text">
+                                    <span class="goods-favorites__name"><a href="#">Томат Компанеро F1</a></span>
+                                    <div class="goods-favorites__short-description">
+                                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                        тексты. Несколько но использовало текста великий однажды рыбного заглавных выйти
+                                        предложения большого они за, всеми себя семантика. Она рукопись это живет!
+                                    </div>
+                                    <span class="goods-favorites__price">155550.00p</span>
+                                </div>
+                            </div>
+                            <div class="goods-favorites__action">
+                                <button class="goods-favorites__to-product" data-show-text="К товару"></button>
+                                <button class="goods-favorites__to-cart" data-show-text="В корзину"></button>
+                                <button class="goods-favorites__remove-btn" data-show-text="Удалить"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar__lk" id="sidebar__lk">
+
+                <div class="sidebar-lk">
+                    <div class="sidebar-lk__title">Войти или создать профиль</div>
+                </div>
+
+                <form action="#" class="sidebar-lk__form form">
+                    <legend>Войти</legend>
+                    <fieldset>
+                        <div class="form__control form__control--text">
+                            <input type="email" id="sign-up-email" required>
+                            <label for="sign-up-email">Ваш E-mail</label>
+                        </div>
+                        <div class="form__control form__control--text">
+                            <input type="password" id="sign-up-password" required>
+                            <label for="sign-up-password">Ваш пароль</label>
+                        </div>
+                        <div class="form__btns">
+                            <button type="button" class="form__btn form__btn--forgotten">Забыли пароль?</button>
+                            <button type="submit" class="form__btn form__btn--submit">Войти</button>
+                        </div>
+                    </fieldset>
+
+                </form>
+
+
+                <form action="#" class="sidebar-lk__form form">
+                    <legend>Зарегистрироваться</legend>
+                    <fieldset>
+                        <div class="form__control form__control--text">
+                            <input type="text" id="register-firstname" required>
+                            <label for="register-firstname">Имя</label>
+                        </div>
+                        <div class="form__control form__control--text">
+                            <input type="text" id="register-lastname" required>
+                            <label for="register-lastname">Фамилия</label>
+                        </div>
+                        <div class="form__control form__control--text">
+                            <input type="email" id="register-email" required>
+                            <label for="register-email">Ваш E-mail</label>
+                        </div>
+                        <div class="form__control form__control--text">
+                            <input type="tel" id="register-phone" required>
+                            <label for="register-phone">Телефон</label>
+                        </div>
+                        <div class="form__control form__control--text">
+                            <input type="password" id="register-password" required>
+                            <label for="register-password">Ваш пароль</label>
+                        </div>
+                        <div class="form__btns">
+                            <button type="submit" class="form__btn form__btn--submit">Зарегистрироваться</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
     </div>
 </header>
 
