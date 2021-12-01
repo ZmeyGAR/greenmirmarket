@@ -400,28 +400,348 @@
         <div class="header__widgets widgets">
             <ul class="widgets__list">
                 <li class="widgets__item widgets__item--auto-width">
-                    <form class="search">
-                        <input class="search__input" type="search">
-                        <span class="search__placeholder" data-placeholder="Поиск">Поиск</span>
-                        <button class="search__btn" type="submit">
-                            <span class="search__icon"></span>
-                        </button>
-                    </form>
+                    <div class="search">
+                        <form action="#" class="search__form form">
+                            <div class="form__control form__control--text search__control">
+                                <label class="search__label" for="search-input">Поиск</label>
+                                <input class="search__input" type="search" id="search-input" minlength="3">
+                            </div>
+                            <button class="search__btn" type="submit">
+                                <span class="search__icon"></span>
+                            </button>
+                        </form>
+                        <div class="search__result result-search">
+                            <div class="result-search__container __container">
+                                <div class="result-search__body">
+                                    <div class="result-search__container">
+                                        <ul class="result-search__categories">
+                                            <li class="active" data-count="19">Все категории</li>
+                                            <li data-count="109">Почти все категории</li>
+                                        </ul>
+                                    </div>
+                                    <div class="result-search__container">
+                                        <ul class="result-search__products mini-cart__list">
+
+                                            <li class="mini-cart__goods goods-card">
+                                                <div class="goods-card__info">
+                                                    <a href="#" class="goods-card__img">
+                                                        <picture>
+                                                            <source srcset="image/tomat.webp" type="image/webp"><img
+                                                                src="image/tomat.jpg" alt="Томат"></picture>
+                                                    </a>
+                                                    <div class="goods-card__text">
+                                                        <span class="goods-card__name"><a href="#">Морковь Абако F1.
+                                                                Фр.2,2-2,4</a></span>
+                                                        <span class="goods-card__short-description">Далеко-далеко за
+                                                            словесными горами в стране гласных и согласных, живут рыбные
+                                                            тексты. Сбить себя своего сих она свой ручеек собрал
+                                                            несколько
+                                                            буквоград путь, океана, не там за толку раз продолжил
+                                                            коварных
+                                                            приставка?</span>
+                                                        <span class="goods-card__price">155550.00p</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="goods-card__action">
+
+                                                    <a href="#" class="goods-card__to-product"
+                                                        data-show-text="К товару"></a>
+                                                    <button class="goods-card__to-cart"
+                                                        data-show-text="В корзину"></button>
+                                                    <button class="goods-card__to-favorites"
+                                                        data-show-text="В избранное"></button>
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="result-search__footer">
+                                    <button class="result-search__btn" data-show-text="Все результаты"></button>
+                                    <button class="result-search__btn" data-show-text="Отменить"
+                                        onclick="this.closest('.search__result').classList.remove('open')"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </li>
                 <li class="widgets__item">
-                    <div class="cart cart--mini" data-count="10">
-                        <button class="cart__btn">
-                            <span class="cart__icon"></span>
-                        </button>
-                        <ul class="cart__list">
-                            <li class="cart__item"></li>
-                        </ul>
+                    <div class="cart cart--mini">
+                        <button class="cart__btn" data-count="10"
+                            onclick="this.parentNode.querySelector('.cart__container').classList.toggle('open')"></button>
+                        <div class="cart__container">
+                            <button class="cart__btn-close" data-before="&#10008;" data-after="Закрыть"
+                                onclick="this.parentNode.classList.toggle('open')"></button>
+                            <div id="cart" class="mini-cart" data-da="#sidebar__cart, 569.98 , 2">
+
+                                <div data-loading-text="Загрузка..." class="mini-cart__title">
+                                    Ваша корзина
+                                    <span id="cart-total">Товаров: 1 (3625.00р.)</span>
+                                </div>
+
+                                <ul class="mini-cart__list">
+                                    <li class="mini-cart__goods goods-card">
+
+                                        <div class="goods-card__info">
+                                            <a href="#" class="goods-card__img">
+                                                <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                            </a>
+                                            <div class="goods-card__text">
+                                                <span class="goods-card__name"><a href="#">Морковь Абако F1.
+                                                        Фр.2,2-2,4</a></span>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
+                                                <span class="goods-card__price">155550.00p</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="goods-card__action">
+
+                                            <div class="goods-card__quantity product__stack">
+                                                <button class="decrement">-</button>
+                                                <input type="text" size="3" value="1">
+                                                <button class="increment">+</button>
+                                            </div>
+                                            <button class="goods-card__to-favorites"
+                                                data-show-text="В избранное"></button>
+                                            <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                                        </div>
+
+                                    </li>
+                                    <li class="mini-cart__goods goods-card">
+
+                                        <div class="goods-card__info">
+                                            <a href="#" class="goods-card__img">
+                                                <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                            </a>
+                                            <div class="goods-card__text">
+                                                <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <span class="goods-card__price">155550.00p</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="goods-card__action">
+
+                                            <div class="goods-card__quantity product__stack">
+                                                <button class="decrement">-</button>
+                                                <input type="text" size="3" value="1">
+                                                <button class="increment">+</button>
+                                            </div>
+                                            <button class="goods-card__to-favorites"
+                                                data-show-text="В избранное"></button>
+                                            <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                                        </div>
+
+                                    </li>
+                                    <li class="mini-cart__goods goods-card">
+
+                                        <div class="goods-card__info">
+                                            <a href="#" class="goods-card__img">
+                                                <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                            </a>
+                                            <div class="goods-card__text">
+                                                <span class="goods-card__name"><a href="#">Морковь Абако F1.
+                                                        Фр.2,2-2,4</a></span>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
+                                                <span class="goods-card__price">155550.00p</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="goods-card__action">
+
+                                            <div class="goods-card__quantity product__stack">
+                                                <button class="decrement">-</button>
+                                                <input type="text" size="3" value="1">
+                                                <button class="increment">+</button>
+                                            </div>
+                                            <button class="goods-card__to-favorites"
+                                                data-show-text="В избранное"></button>
+                                            <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                                        </div>
+
+                                    </li>
+                                    <li class="mini-cart__goods goods-card">
+
+                                        <div class="goods-card__info">
+                                            <a href="#" class="goods-card__img">
+                                                <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                            </a>
+                                            <div class="goods-card__text">
+                                                <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <span class="goods-card__price">155550.00p</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="goods-card__action">
+
+                                            <div class="goods-card__quantity product__stack">
+                                                <button class="decrement">-</button>
+                                                <input type="text" size="3" value="1">
+                                                <button class="increment">+</button>
+                                            </div>
+                                            <button class="goods-card__to-favorites"
+                                                data-show-text="В избранное"></button>
+                                            <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                                        </div>
+
+                                    </li>
+                                    <li class="mini-cart__goods goods-card">
+
+                                        <div class="goods-card__info">
+                                            <a href="#" class="goods-card__img">
+                                                <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                            </a>
+                                            <div class="goods-card__text">
+                                                <span class="goods-card__name"><a href="#">Морковь Абако F1.
+                                                        Фр.2,2-2,4</a></span>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
+                                                <span class="goods-card__price">155550.00p</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="goods-card__action">
+
+                                            <div class="goods-card__quantity product__stack">
+                                                <button class="decrement">-</button>
+                                                <input type="text" size="3" value="1">
+                                                <button class="increment">+</button>
+                                            </div>
+                                            <button class="goods-card__to-favorites"
+                                                data-show-text="В избранное"></button>
+                                            <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                                        </div>
+
+                                    </li>
+                                    <li class="mini-cart__goods goods-card">
+
+                                        <div class="goods-card__info">
+                                            <a href="#" class="goods-card__img">
+                                                <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
+                                            </a>
+                                            <div class="goods-card__text">
+                                                <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
+                                                <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
+                                                <span class="goods-card__price">155550.00p</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="goods-card__action">
+
+                                            <div class="goods-card__quantity product__stack">
+                                                <button class="decrement">-</button>
+                                                <input type="text" size="3" value="1">
+                                                <button class="increment">+</button>
+                                            </div>
+                                            <button class="goods-card__to-favorites"
+                                                data-show-text="В избранное"></button>
+                                            <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
+                                        </div>
+
+                                    </li>
+                                </ul>
+
+                                <div class="mini-cart__totals">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Итого</td>
+                                                <td>3625.00р.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Всего</td>
+                                                <td>3625.00р.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <a href="#" class="mini-cart__links"><span>К оформлению</span></a>
+
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
+
                 </li>
                 <li class="widgets__item">
                     <div class="lk">
-                        <button class="lk__btn lk__sign-up">Войти</button>
+                        <button class="lk__btn lk__sign-up"
+                            onclick="this.parentNode.querySelector('.lk__container').classList.toggle('open')">Войти</button>
+                        <div class="lk__container">
+                            <button class="cart__btn-close" data-before="&#10008;" data-after="Закрыть"
+                                onclick="this.parentNode.classList.toggle('open')"></button>
+
+                            <div data-da="#sidebar__lk, 598.98, 2">
+                                <div class="sidebar-lk">
+                                    <div class="sidebar-lk__title">Войти или создать профиль</div>
+                                </div>
+
+                                <form action="#" class="sidebar-lk__form form">
+                                    <legend>Войти</legend>
+                                    <fieldset>
+                                        <div class="form__control form__control--text">
+                                            <input type="email" id="sign-up-email" required>
+                                            <label for="sign-up-email">Ваш E-mail</label>
+                                        </div>
+                                        <div class="form__control form__control--text">
+                                            <input type="password" id="sign-up-password" required>
+                                            <label for="sign-up-password">Ваш пароль</label>
+                                        </div>
+                                        <div class="form__btns">
+                                            <button type="button" class="form__btn form__btn--forgotten">Забыли
+                                                пароль?</button>
+                                            <button type="submit" class="form__btn form__btn--submit">Войти</button>
+                                        </div>
+                                    </fieldset>
+
+                                </form>
+
+                                <form action="#" class="sidebar-lk__form form">
+                                    <legend>Зарегистрироваться</legend>
+                                    <fieldset>
+                                        <div class="form__control form__control--text">
+                                            <input type="text" id="register-firstname" required>
+                                            <label for="register-firstname">Имя</label>
+                                        </div>
+                                        <div class="form__control form__control--text">
+                                            <input type="text" id="register-lastname" required>
+                                            <label for="register-lastname">Фамилия</label>
+                                        </div>
+                                        <div class="form__control form__control--text">
+                                            <input type="email" id="register-email" required>
+                                            <label for="register-email">Ваш E-mail</label>
+                                        </div>
+                                        <div class="form__control form__control--text">
+                                            <input type="tel" id="register-phone" required>
+                                            <label for="register-phone">Телефон</label>
+                                        </div>
+                                        <div class="form__control form__control--text">
+                                            <input type="password" id="register-password" required>
+                                            <label for="register-password">Ваш пароль</label>
+                                        </div>
+                                        <div class="form__btns">
+                                            <button type="submit"
+                                                class="form__btn form__btn--submit">Зарегистрироваться</button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+
+                        </div>
                     </div>
+
                 </li>
             </ul>
         </div>
@@ -464,6 +784,7 @@
             <div class="sidebar__nav" id="sidebar__nav">
 
             </div>
+
             <div class="sidebar__catalog" id="sidebar__catalog">
                 <div class="category-list">
     <span class="category-list__title">Каталог</span>
@@ -502,192 +823,11 @@
     </ul>
 </div>
             </div>
+
             <div class="sidebar__cart" id="sidebar__cart">
-                <div id="cart" class="mini-cart">
 
-                    <div data-loading-text="Загрузка..." class="mini-cart__title">
-                        <span id="cart-total">Товаров: 1 (3625.00р.)</span>
-                    </div>
-
-                    <ul class="mini-cart__list">
-                        <li class="mini-cart__goods goods-card">
-
-                            <div class="goods-card__info">
-                                <a href="#" class="goods-card__img">
-                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
-                                </a>
-                                <div class="goods-card__text">
-                                    <span class="goods-card__name"><a href="#">Морковь Абако F1. Фр.2,2-2,4</a></span>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
-                                    <span class="goods-card__price">155550.00p</span>
-                                </div>
-                            </div>
-
-                            <div class="goods-card__action">
-
-                                <div class="goods-card__quantity product__stack">
-                                    <button class="decrement">-</button>
-                                    <input type="text" size="3" value="1">
-                                    <button class="increment">+</button>
-                                </div>
-                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
-                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
-                            </div>
-
-                        </li>
-                        <li class="mini-cart__goods goods-card">
-
-                            <div class="goods-card__info">
-                                <a href="#" class="goods-card__img">
-                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
-                                </a>
-                                <div class="goods-card__text">
-                                    <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <span class="goods-card__price">155550.00p</span>
-                                </div>
-                            </div>
-
-                            <div class="goods-card__action">
-
-                                <div class="goods-card__quantity product__stack">
-                                    <button class="decrement">-</button>
-                                    <input type="text" size="3" value="1">
-                                    <button class="increment">+</button>
-                                </div>
-                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
-                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
-                            </div>
-
-                        </li>
-                        <li class="mini-cart__goods goods-card">
-
-                            <div class="goods-card__info">
-                                <a href="#" class="goods-card__img">
-                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
-                                </a>
-                                <div class="goods-card__text">
-                                    <span class="goods-card__name"><a href="#">Морковь Абако F1. Фр.2,2-2,4</a></span>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
-                                    <span class="goods-card__price">155550.00p</span>
-                                </div>
-                            </div>
-
-                            <div class="goods-card__action">
-
-                                <div class="goods-card__quantity product__stack">
-                                    <button class="decrement">-</button>
-                                    <input type="text" size="3" value="1">
-                                    <button class="increment">+</button>
-                                </div>
-                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
-                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
-                            </div>
-
-                        </li>
-                        <li class="mini-cart__goods goods-card">
-
-                            <div class="goods-card__info">
-                                <a href="#" class="goods-card__img">
-                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
-                                </a>
-                                <div class="goods-card__text">
-                                    <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <span class="goods-card__price">155550.00p</span>
-                                </div>
-                            </div>
-
-                            <div class="goods-card__action">
-
-                                <div class="goods-card__quantity product__stack">
-                                    <button class="decrement">-</button>
-                                    <input type="text" size="3" value="1">
-                                    <button class="increment">+</button>
-                                </div>
-                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
-                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
-                            </div>
-
-                        </li>
-                        <li class="mini-cart__goods goods-card">
-
-                            <div class="goods-card__info">
-                                <a href="#" class="goods-card__img">
-                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
-                                </a>
-                                <div class="goods-card__text">
-                                    <span class="goods-card__name"><a href="#">Морковь Абако F1. Фр.2,2-2,4</a></span>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <small class="goods-card__option"> - фасовка, пачка 10 пачка</small>
-                                    <span class="goods-card__price">155550.00p</span>
-                                </div>
-                            </div>
-
-                            <div class="goods-card__action">
-
-                                <div class="goods-card__quantity product__stack">
-                                    <button class="decrement">-</button>
-                                    <input type="text" size="3" value="1">
-                                    <button class="increment">+</button>
-                                </div>
-                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
-                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
-                            </div>
-
-                        </li>
-                        <li class="mini-cart__goods goods-card">
-
-                            <div class="goods-card__info">
-                                <a href="#" class="goods-card__img">
-                                    <picture><source srcset="image/tomat.webp" type="image/webp"><img src="image/tomat.jpg" alt="Томат"></picture>
-                                </a>
-                                <div class="goods-card__text">
-                                    <span class="goods-card__name"><a href="#">Томат Компанеро F1</a></span>
-                                    <small class="goods-card__option"> - фасовка, пачка 1 пачка</small>
-                                    <span class="goods-card__price">155550.00p</span>
-                                </div>
-                            </div>
-
-                            <div class="goods-card__action">
-
-                                <div class="goods-card__quantity product__stack">
-                                    <button class="decrement">-</button>
-                                    <input type="text" size="3" value="1">
-                                    <button class="increment">+</button>
-                                </div>
-                                <button class="goods-card__to-favorites" data-show-text="В избранное"></button>
-                                <button class="goods-card__remove-btn" data-show-text="Удалить"></button>
-                            </div>
-
-                        </li>
-                    </ul>
-
-                    <div class="mini-cart__totals">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Итого</td>
-                                    <td>3625.00р.</td>
-                                </tr>
-                                <tr>
-                                    <td>Всего</td>
-                                    <td>3625.00р.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <a href="#" class="mini-cart__links"><span>К оформлению</span></a>
-
-                    </div>
-
-                </div>
             </div>
+
             <div class="sidebar__favorites" id="sidebar__favorites">
                 <div class="mini-favorites" id="favorites">
                     <div class="mini-favorites__title">Избранное</div>
@@ -801,60 +941,8 @@
                     </ul>
                 </div>
             </div>
+
             <div class="sidebar__lk" id="sidebar__lk">
-
-                <div class="sidebar-lk">
-                    <div class="sidebar-lk__title">Войти или создать профиль</div>
-                </div>
-
-                <form action="#" class="sidebar-lk__form form">
-                    <legend>Войти</legend>
-                    <fieldset>
-                        <div class="form__control form__control--text">
-                            <input type="email" id="sign-up-email" required>
-                            <label for="sign-up-email">Ваш E-mail</label>
-                        </div>
-                        <div class="form__control form__control--text">
-                            <input type="password" id="sign-up-password" required>
-                            <label for="sign-up-password">Ваш пароль</label>
-                        </div>
-                        <div class="form__btns">
-                            <button type="button" class="form__btn form__btn--forgotten">Забыли пароль?</button>
-                            <button type="submit" class="form__btn form__btn--submit">Войти</button>
-                        </div>
-                    </fieldset>
-
-                </form>
-
-
-                <form action="#" class="sidebar-lk__form form">
-                    <legend>Зарегистрироваться</legend>
-                    <fieldset>
-                        <div class="form__control form__control--text">
-                            <input type="text" id="register-firstname" required>
-                            <label for="register-firstname">Имя</label>
-                        </div>
-                        <div class="form__control form__control--text">
-                            <input type="text" id="register-lastname" required>
-                            <label for="register-lastname">Фамилия</label>
-                        </div>
-                        <div class="form__control form__control--text">
-                            <input type="email" id="register-email" required>
-                            <label for="register-email">Ваш E-mail</label>
-                        </div>
-                        <div class="form__control form__control--text">
-                            <input type="tel" id="register-phone" required>
-                            <label for="register-phone">Телефон</label>
-                        </div>
-                        <div class="form__control form__control--text">
-                            <input type="password" id="register-password" required>
-                            <label for="register-password">Ваш пароль</label>
-                        </div>
-                        <div class="form__btns">
-                            <button type="submit" class="form__btn form__btn--submit">Зарегистрироваться</button>
-                        </div>
-                    </fieldset>
-                </form>
 
             </div>
         </div>
