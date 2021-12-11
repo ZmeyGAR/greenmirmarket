@@ -26,12 +26,16 @@
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./styles/swiper.bundle.css" type="text/css">
+    <link rel="stylesheet" href="./styles/leaflet.css" type="text/css">
     <link rel="stylesheet" href="./styles/style.css" type="text/css">
 
 
     <!-- SCRIPTS -->
     <script src="./scripts/parallax.tilt.js" defer></script>
     <script src="./scripts/swiper-bundle.js" defer></script>
+    <script src="./scripts/leaflet.js" defer></script>
+    <script src="./scripts/leaflet.init.js" defer></script>
+    <script src="./scripts/sliders.js" defer></script>
     <script src="./scripts/main.min.js" defer></script>
 
     <style>
@@ -473,14 +477,14 @@
                 </li>
                 <li class="widgets__item">
                     <div class="cart cart--mini">
-                        <button class="cart__btn" data-count="10"
+                        <button class="cart__btn added" data-count="Товаров: 15 (1720.00р.)"
                             onclick="this.parentNode.querySelector('.cart__container').classList.toggle('open')"></button>
                         <div class="cart__container">
                             <button class="cart__btn-close" data-before="&#10008;" data-after="Закрыть"
                                 onclick="this.parentNode.classList.toggle('open')"></button>
                             <div id="cart" class="mini-cart" data-da="#sidebar__cart, 569.98 , 2">
 
-                                <div data-loading-text="Загрузка..." class="mini-cart__title">
+                                <!-- <div data-loading-text="Загрузка..." class="mini-cart__title">
                                     Ваша корзина
                                     <span id="cart-total">Товаров: 1 (3625.00р.)</span>
                                 </div>
@@ -669,10 +673,20 @@
 
                                     <a href="#" class="mini-cart__links"><span>К оформлению</span></a>
 
-                                </div>
+                                </div> -->
 
+                                <div class="alert empty">
+                                    <p class="text-center"><b>Ваша корзина пуста!</b></p>
+                                    <picture>
+                                        <source srcset="image/empty-cart.webp" type="image/webp">
+                                        <img src="image/empty-cart.png" alt="Ваша корзина пуста!">
+                                    </picture>
+                                </div>
                             </div>
                         </div>
+
+
+
                     </div>
 
                 </li>
@@ -1058,7 +1072,70 @@
     <footer class="footer">
     <div class="footer__content">
         <div class="footer__container __container">
-            <p class="copyright">Все права не защищены</p>
+
+            <div class="footer__information spoiler" data-spoilers="570,min">
+                <button type="button" tabindex="-1" data-spoiler-button>
+                    <h5>Информация</h5>
+                </button>
+                <ul data-spoiler-content>
+                    <li><a
+                            href="http://greenmirmarket/index.php?route=information/information&amp;information_id=6">ДОСТАВКА</a>
+                    </li>
+                    <li><a href="http://greenmirmarket/index.php?route=information/information&amp;information_id=3">Политика
+                            безопасности</a></li>
+                    <li><a href="http://greenmirmarket/index.php?route=information/information&amp;information_id=5">Условия
+                            соглашения</a></li>
+                    <li><a href="http://greenmirmarket/index.php?route=information/information&amp;information_id=4">О
+                            нас</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__support spoiler" data-spoilers="570,min">
+                <button type="button" tabindex="-1" data-spoiler-button>
+                    <h5>Служба поддержки</h5>
+                </button>
+                <ul data-spoiler-content>
+                    <li><a href="http://greenmirmarket/index.php?route=information/contact">Связаться с нами</a>
+                    </li>
+                    <li><a href="http://greenmirmarket/index.php?route=account/return/add">Возврат товара</a>
+                    </li>
+                    <li><a href="http://greenmirmarket/index.php?route=information/sitemap">Карта сайта</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__additional spoiler" data-spoilers="570,min">
+                <button type="button" tabindex="-1" data-spoiler-button>
+                    <h5>Дополнительно</h5>
+                </button>
+                <ul data-spoiler-content>
+                    <li><a href="http://greenmirmarket/index.php?route=product/manufacturer">Производители</a>
+                    </li>
+                    <li><a href="http://greenmirmarket/index.php?route=account/voucher">Подарочные
+                            сертификаты</a></li>
+                    <li><a href="http://greenmirmarket/index.php?route=affiliate/login">Партнёрская
+                            программа</a></li>
+                    <li><a href="http://greenmirmarket/index.php?route=product/special">Акции</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__lk spoiler" data-spoilers="570,min">
+                <button type="button" tabindex="-1" data-spoiler-button>
+                    <h5>Личный кабинет</h5>
+                </button>
+                <ul data-spoiler-content>
+                    <li><a href="http://greenmirmarket/index.php?route=account/account">Личный кабинет</a></li>
+                    <li><a href="http://greenmirmarket/index.php?route=account/order">История заказов</a></li>
+                    <li><a href="http://greenmirmarket/index.php?route=account/wishlist">Закладки</a></li>
+                    <li><a href="http://greenmirmarket/index.php?route=account/newsletter">Рассылка</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer__container __container">
+            <div class="footer__copy">
+                <p>Работает на <a target="_blank" href="https://ocstore.com/?utm_source=ocstore3_install">ocStore</a>
+                    Ваш магазин © 2021</p>
+            </div>
         </div>
     </div>
 
