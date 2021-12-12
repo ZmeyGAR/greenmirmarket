@@ -263,7 +263,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         on: {
             init: function (swiper) {
-                console.log(swiper);
                 const params = swiper.params.breakpoints[swiper.currentBreakpoint]
                 if (swiper.slides.length <= params.slidesPerView) {
                     swiper.$el[0].parentNode.classList.add('catalog-category-slider-disable')

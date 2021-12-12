@@ -1780,6 +1780,61 @@ main {
     min-width: 180px;
     width: 100%;
     margin: 5px 5px 15px; }
+  .catalog__tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 5px 0; }
+    .catalog__tools > * {
+      margin-right: 10px; }
+      .catalog__tools > *:not(:last-child) {
+        margin-right: 50px; }
+  .catalog__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 5px 0; }
+    .catalog__pagination .pagination {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      padding: 5px 0; }
+      .catalog__pagination .pagination > * {
+        margin-right: 10px; }
+  .catalog__empty {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .catalog__empty #world {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+    .catalog__empty p {
+      font-size: 3em;
+      color: #205426;
+      z-index: 1;
+      text-align: center; }
 
 .item {
   border-radius: 4px;
@@ -3060,6 +3115,54 @@ main {
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%); }
 
+.form__control--select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
+  .form__control--select select {
+    height: 33px;
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 1px 1px #2054267c, inset 0 0 1px 1px #2054267c;
+            box-shadow: 0 0 1px 1px #2054267c, inset 0 0 1px 1px #2054267c;
+    background: #EBF2DC; }
+  .form__control--select label {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    padding: 0 18px 0 18px;
+    -webkit-transform: translate(0, 50%);
+        -ms-transform: translate(0, 50%);
+            transform: translate(0, 50%);
+    background: transparent;
+    -webkit-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #205426;
+    font-weight: bold;
+    overflow: hidden; }
+    .form__control--select label::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 18px;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      z-index: -1;
+      background: whitesmoke;
+      width: calc(100% - 18px);
+      height: 3px; }
+
 .form__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3841,6 +3944,24 @@ main {
                   transform: translate(0, 0);
           opacity: 1;
           visibility: visible; }
+        .catalog-category-slider-disable .swiper-slide-visible .item__name {
+          -webkit-transform: translate(0, 0);
+              -ms-transform: translate(0, 0);
+                  transform: translate(0, 0);
+          opacity: 0.5;
+          visibility: visible;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+        .catalog-category-slider-disable .swiper-slide-next .item__name {
+          -webkit-transform: translate(0, 0);
+              -ms-transform: translate(0, 0);
+                  transform: translate(0, 0);
+          opacity: 0.5;
+          visibility: visible;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
       .contact_us__frame {
         -webkit-transition: -webkit-filter 0.3s linear;
         transition: -webkit-filter 0.3s linear;

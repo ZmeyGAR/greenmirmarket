@@ -36,6 +36,12 @@
     <script src="./scripts/leaflet.js" defer></script>
     <script src="./scripts/leaflet.init.js" defer></script>
     <script src="./scripts/sliders.js" defer></script>
+
+    <script src="./scripts/THREE.js" defer></script>
+    <script src="./scripts/TweenMax.js" defer></script>
+    <script src="./scripts/OrbitControls.js" defer></script>
+    <script src="./scripts/THREE.init.js" defer></script>
+
     <script src="./scripts/main.min.js" defer></script>
 
     <style>
@@ -1115,11 +1121,10 @@
                     <div class="prev swiper-nav"><button class="button-prev"></button></div>
                     <div class="swiper">
 
-                        <!-- Additional required wrapper -->
+
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1135,7 +1140,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1152,7 +1157,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1170,7 +1175,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1187,7 +1192,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1204,7 +1209,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1221,7 +1226,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1238,7 +1243,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1255,7 +1260,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
 
@@ -1275,7 +1280,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <div class="item" data-tilt>
                                     <a href="#" class="item__link">
                                         <div class="item__img">
                                             <picture>
@@ -1285,8 +1290,6 @@
                                                     alt="КАССЕТЫ И СТАКАНЫ ДЛЯ РАССАДЫ, КАШПО ДЛЯ ЦВЕТОВ"
                                                     class="swiper-lazy">
                                             </picture>
-
-
                                         </div>
                                         <span class="item__name">КАССЕТЫ И СТАКАНЫ ДЛЯ РАССАДЫ, КАШПО ДЛЯ ЦВЕТОВ</span>
                                     </a>
@@ -1300,6 +1303,54 @@
 
             </div>
         </div>
+
+        <div class="catalog__tools form">
+            <div class="form__control form__control--select">
+
+                <label for="input-sort">Сортировка </label>
+                <select id="input-sort" onchange="location = this.value;">
+
+                    <option value="{{ sorts.href }}" selected="selected">По умолчанию</option>
+
+                    <option value="{{ sorts.href }}">От А до Я</option>
+
+                </select>
+
+
+            </div>
+            <div class="form__control form__control--select">
+
+                <label for="input-limit">Показывать </label>
+                <select id="input-limit" onchange="location = this.value;">
+
+                    <option value="{{ limits.href }}" selected="selected">15</option>
+
+                    <option value="{{ limits.href }}">25</option>
+
+                </select>
+
+
+            </div>
+        </div>
+        <div class="catalog__empty">
+            <div id="world"></div>
+            <p><b>Пусто!</b></p>
+        </div>
+
+        <div class="catalog__pagination">
+
+            <ul class="pagination">
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">&gt;</a></li>
+                <li><a href="#">&gt;|</a></li>
+            </ul>
+
+        </div>
+
+
+    </div>
+
     </div>
 
 </section>
