@@ -38,7 +38,7 @@ function init() {
     WIDTH = document.querySelector('#world').getBoundingClientRect().width;
 
     aspectRatio = WIDTH / HEIGHT;
-    fieldOfView = 30;
+    fieldOfView = 25;
     nearPlane = 1;
     farPlane = 2000;
     camera = new THREE.PerspectiveCamera(
