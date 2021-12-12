@@ -1684,7 +1684,6 @@ main {
       width: 50px;
       height: auto;
       background: whitesmoke;
-      z-index: 10;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1794,8 +1793,6 @@ main {
     padding: 5px 0; }
     .catalog__tools > * {
       margin-right: 10px; }
-      .catalog__tools > *:not(:last-child) {
-        margin-right: 50px; }
   .catalog__pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3592,6 +3589,8 @@ main {
       .catalog__item:nth-child(n) {
         max-width: calc(33% - 60px);
         margin-right: 30px; }
+        .catalog__tools > *:not(:last-child) {
+          margin-right: 50px; }
       .information-header__title {
         max-width: 50%;
         font-size: 3em;
