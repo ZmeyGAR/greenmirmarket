@@ -60,8 +60,8 @@ function init() {
     container = document.getElementById('world');
     container.appendChild(renderer.domElement);
 
-    windowHalfX = WIDTH / 2;
-    windowHalfY = HEIGHT / 2;
+    windowHalfX = window.innerWidth / 2;
+    windowHalfY = window.innerHeight / 2;
 
     window.addEventListener('resize', onWindowResize, false);
     document.addEventListener('mousemove', handleMouseMove, false);
